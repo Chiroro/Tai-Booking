@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ユーザーの新規登録</title>
+
+    <!-- Bootstrap -->
+    <link href="common/css/bootstrap.min.css" rel="stylesheet">
+    <link href="common/css/page.css" rel="stylesheet">
+    <link href="common/css/add.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container-fulid">
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <span class="mar-right"><img src="common/image/logo.png" /></span>
+            <span>ようこそ、山田花子さん（<a href="passwd.html" class="text-orange">パスワード変更</a>）</span>
+          </div>
+          <div class="col-md-6 col-lg-6 page-right mar-top">
+            <input type="button" class="btn btn-sm btn-header" name="button2" onclick="location.href='mycalendar.html'" value="院長・自分カレンダー" />
+            <input type="button" class="btn btn-sm btn-header" name="button" onclick="location.href='booking-monthly.html'" value="予約簿" />
+            <input type="button" class="btn btn-sm btn-header" name="button" onclick="location.href='carte_patient_search.html'" value="カルテ" />
+            <input type="button" class="btn btn-sm btn-header" name="button" onclick="location.href='menu.html'" value="メニューへ" />
+            <input type="button" class="btn btn-sm btn-header" name="button" onclick="location.href='logout.html'" value="ログアウト" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- content menu -->
+	
+	<div class="content-page">
+		<h3>ユーザー管理　＞　ユーザーの新規登録</h3>
+		<table class="table table-bordered">
+			<tbody>
+				<tr>
+					<td class="col-title">氏名</td>
+					<td>
+						<input class="form-control" type="text" name="textfield2" id="textfield2" />
+						<span class="error-input">※必須</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="col-title">氏名よみ</td>
+					<td>
+						<input class="form-control" type="text" name="textfield3" id="textfield3" />
+						<span class="error-input">※必須</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="col-title">（表示用）氏名</td>
+					<td>
+						<input class="form-control" type="text" name="textfield" id="textfield" />
+						<span class="error-input">※必須</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="col-title">ログインID</td>
+					<td>
+						<input class="form-control" type="text" name="textfield4" id="textfield4" />
+						<span class="error-input">※必須</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="col-title">パスワード</td>
+					<td>
+						<input class="form-control" type="text" name="textfield5" id="textfield5" />
+						<span class="error-input">※必須</span>
+					</td>
+				</tr>
+				<tr>
+			        <td class="col-title">所属</td>
+			        <td>
+						<div class="radio">
+							<label><input type="radio" name="optradio">医師</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio">衛生士（相談業務あり）</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio">衛生士（相談業務なし）</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio">事務</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio">受付</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio">放射線技師</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio">滅菌</label>
+						</div>
+			        </td>
+				</tr>
+				<tr>
+			        <td class="col-title">権限</td>
+			        <td>
+			          	<div class="checkbox">
+							<label><input type="checkbox" value="">患者管理</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" value="">予約管理</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" value="">院長予定管理</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" value="">放射線録管理</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" value="">月1回の予約業務前処理</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" value="">医院情報管理</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" value="">各種リスト表示</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" value="">共通マスタ管理</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" value="">ユーザー管理</label>
+						</div>
+			        </td>
+		      	</tr>
+				<tr>
+			        <td class="col-title">検索対象</td>
+					<td>
+			        	<div class="checkbox">
+							<label><input type="checkbox" value="">含めない（人ではないユーザーである）</label>
+						</div>
+			        </td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="row margin-bottom">
+          	<div class="col-md-12 text-center">
+            	<input type="submit" name="button" value="登録する" class="btn btn-sm btn-page mar-right">
+          	</div>
+        </div>
+        <div class="row margin-bottom">
+          	<div class="col-md-12 text-center">
+            	<input type="submit" name="button" value="登録済みユーザー一覧に戻る" class="btn btn-sm btn-page mar-right">
+          	</div>
+        </div>
+	</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="common/js/bootstrap.min.js"></script>
+  </body>
+</html>

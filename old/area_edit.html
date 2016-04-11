@@ -1,0 +1,606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>オーソネットワーク予約管理システム</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="1280" border="0" cellspacing="0" cellpadding="5">
+  <tr>
+    <td bgcolor="#00b2b2"><table width="1280" border="0" cellspacing="0" cellpadding="5">
+      <tr>
+        <td width="124"><img src="title.png" width="124" height="30" /></td>
+        <td>ようこそ、山田花子さん</td>
+        <td width="1%"><input type="button" onclick="location.href='mycalendar.html'" value="院長・自分カレンダー" /></td>
+        <td width="1%"><input type="button" onclick="location.href='booking-monthly.html'" value="予約簿" /></td>
+        <td width="1%"><input type="button" onclick="location.href='carte_patient_search.html'" value="カルテ" /></td>
+        <td width="1%"><input type="button" onclick="location.href='menu.html'" value="メニューへ" /></td>
+        <td width="1%"><input type="button" onclick="location.href='logout.html'" value="ログアウト" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="title">ユーザー管理　＞　登録済み所属の編集</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="1" cellspacing="0" cellpadding="5">
+      <tr>
+        <td width="20%" class="col3">地域名</td>
+        <td><input type="text" name="textfield" id="textfield" /></td>
+      </tr>
+      <tr>
+        <td width="20%" class="col3">所属医院</td>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>たい矯正歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>あかまつデンタル</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>アップル歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>あべ小児歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>あゆみ歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>飯田歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>いけだ歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>いしわり歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>今浜歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>イースト歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>上本町ヒルズ歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>うらやす歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>エンドウ歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>太田歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>おおつき歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>岡山協立病院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>岡山大学医学部・歯学部附属病院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>奥田歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>かとう歯科・デイサービスセンターきらり</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>かどや歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>苅田歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>かわい歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>かわいデンタルクリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>川崎医科大学附属病院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>かんざき歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>がもう歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>木下歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>木村歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>倉敷リバーサイド病院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>クリスタルデンタルクリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>くれいし歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>クレオ歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>Grand dental clinic</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>グリーン歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>けやき通り歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>こうづき歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>こやま子ども歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>さいとう歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>さかい歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>さとう歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>しげはら歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>島田が丘歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>しみず歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>正畠歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>白髪歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>しんご歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>城東台ファミリー歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>すずらん歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>砂田歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>砂田内科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>妹尾歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>妹尾歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>たかた歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>高橋歯科診療所</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>たかやま歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>武内歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>たけふ生協歯科診療所</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>歯科たけむらクリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>多田歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>千原歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>土山歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>とよはま歯科 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>内藤歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>中川歯科医院 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>なかしま歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>中村歯科医院 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ながれ歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td> ナツアキ歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>なつかわ歯科 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>新見歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>はなふさ歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>はやし歯科クリニック </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>はるき小児矯正歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ハロー歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>パルフェ歯科医院 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>彦歯科医院 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ひまわり歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ひらかわ歯科クリニック </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>平吾歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>平松歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ひろおか歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ビーンズ歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ファミリー歯科松永歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ファミール歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>福田歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ふじた歯科医院 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>藤本耳鼻咽喉科クリニック　言語聴覚室</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>藤原歯科医院 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>藤原歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>古川歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>BLANC DENTAL CLINIC </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ブランデンタルクリニック加西</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td> 緑川歯科 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>宮本歯科医院 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>むとう歯科医院 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>山手グリーン歯科医院 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>湯浅歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ゆめはんな歯科クリニック </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>横山みちよ歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>よし歯科 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>よしだ歯科 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ヨリタ歯科クリニック </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>わかさハーモニー歯科 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>和気歯科医院 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>渡里歯科 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>さくら通り矯正歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>飯田歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>いしわり歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>上本町ヒルズ歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>エンドウ歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>かわい歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>かんざき歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>グリーン歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>けやき通り歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>さかい歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>しみず歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>すずらん歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>砂田歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>たかやま歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>武内歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>なかしま歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>なつかわ歯科 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>はやし歯科クリニック </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ビーンズ歯科クリニック</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ファミリー歯科松永歯科医院</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ファミール歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>BLANC DENTAL CLINIC </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ブランデンタルクリニック加西</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td> 緑川歯科 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>むとう歯科医院 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>山手グリーン歯科医院 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ゆめはんな歯科クリニック </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>横山みちよ歯科</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>よしだ歯科 </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>ヨリタ歯科クリニック </td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio" value="radio" /></td>
+            <td>アルファデンタルクリニック</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center"><input type="submit" name="button" id="button" value="保存する" />
+      　　　　　
+      <input type="submit" name="button2" id="button2" value="削除する" /></td>
+  </tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center"><input type="button" onClick="location.href='area_list.html'" value="登録済み地域一覧に戻る" /></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

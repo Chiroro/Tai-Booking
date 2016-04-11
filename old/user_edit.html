@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>オーソネットワーク予約管理システム</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="1280" border="0" cellspacing="0" cellpadding="5">
+  <tr>
+    <td bgcolor="#00b2b2"><table width="1280" border="0" cellspacing="0" cellpadding="5">
+      <tr>
+        <td width="124"><img src="title.png" width="124" height="30" /></td>
+        <td>ようこそ、山田花子さん</td>
+        <td width="1%"><input type="button" onclick="location.href='mycalendar.html'" value="院長・自分カレンダー" /></td>
+        <td width="1%"><input type="button" onclick="location.href='booking-monthly.html'" value="予約簿" /></td>
+        <td width="1%"><input type="button" onclick="location.href='carte_patient_search.html'" value="カルテ" /></td>
+        <td width="1%"><input type="button" onclick="location.href='menu.html'" value="メニューへ" /></td>
+        <td width="1%"><input type="button" onclick="location.href='logout.html'" value="ログアウト" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="title">ユーザー管理　＞　登録済みユーザーの編集</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="1" cellspacing="0" cellpadding="5">
+      <tr>
+        <td width="20%" class="col3">氏名</td>
+        <td><input type="text" name="textfield2" id="textfield2" /></td>
+      </tr>
+      <tr>
+        <td width="20%" class="col3">氏名（よみ）</td>
+        <td><input type="text" name="textfield3" id="textfield3" /></td>
+      </tr>
+      <tr>
+        <td class="col3">表示名</td>
+        <td><input type="text" name="textfield" id="textfield" /></td>
+      </tr>
+      <tr>
+        <td width="20%" class="col3">ログインID</td>
+        <td><input type="text" name="textfield4" id="textfield4" /></td>
+      </tr>
+      <tr>
+        <td width="20%" class="col3">パスワード</td>
+        <td><input type="text" name="textfield5" id="textfield5" /></td>
+      </tr>
+      <tr>
+        <td width="20%" class="col3">所属</td>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td width="1%"><input type="radio" name="radio" id="radio" value="radio" /></td>
+            <td>医師</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio2" id="radio2" value="radio2" /></td>
+            <td>衛生士（相談業務あり）</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio2" id="radio3" value="radio2" /></td>
+            <td>衛生士（相談業務なし）</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio2" id="radio4" value="radio2" /></td>
+            <td>事務</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio2" id="radio5" value="radio2" /></td>
+            <td>受付</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio2" id="radio6" value="radio2" /></td>
+            <td>放射線技師</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="radio" name="radio2" id="radio7" value="radio2" /></td>
+            <td>滅菌</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td width="20%" class="col3">権限</td>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td width="1%"><input type="checkbox" name="checkbox11" id="checkbox11" /></td>
+            <td>患者管理</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="checkbox" name="checkbox11" id="checkbox12" /></td>
+            <td>予約管理</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="checkbox" name="checkbox11" id="checkbox13" /></td>
+            <td>院長予定管理</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="checkbox" name="checkbox11" id="checkbox14" /></td>
+            <td>放射線録管理</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="checkbox" name="checkbox11" id="checkbox15" /></td>
+            <td>月1回の予約業務前処理</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="checkbox" name="checkbox11" id="checkbox16" /></td>
+            <td>医院情報管理</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="checkbox" name="checkbox11" id="checkbox17" /></td>
+            <td>各種リスト表示</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="checkbox" name="checkbox11" id="checkbox18" /></td>
+            <td>共通マスタ管理</td>
+          </tr>
+          <tr>
+            <td width="1%"><input type="checkbox" name="checkbox11" id="checkbox19" /></td>
+            <td>ユーザー管理</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td width="20%" class="col3">検索対象</td>
+        <td><input type="checkbox" name="checkbox" id="checkbox" />
+          含めない（人ではないユーザーである）</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center"><input type="submit" name="button" id="button" value="保存する" />
+      　　　　　
+      <input type="submit" name="button2" id="button2" value="削除する" /></td>
+  </tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center"><input type="button" onClick="location.href='user_list.html'" value="登録済みユーザー一覧に戻る" /></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

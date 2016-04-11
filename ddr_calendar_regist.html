@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>オーソネットワーク予約管理システム</title>
+
+    <!-- Bootstrap -->
+    <link href="common/css/bootstrap.min.css" rel="stylesheet">
+    <link href="common/css/page.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container-fulid">
+        <div class="row">
+          <div class="col-md-6">
+            <span class="mar-right"><img src="common/image/logo.png" /></span>
+            <span>ようこそ、山田花子さん（<a href="passwd.html" class="text-orange">パスワード変更</a>）</span>
+          </div>
+          <div class="col-md-6 page-right mar-top">
+            <input type="button" class="btn btn-sm btn-header" name="button2" onclick="location.href='mycalendar.html'" value="院長・自分カレンダー" />
+            <input type="button" class="btn btn-sm btn-header" name="button" onclick="location.href='booking-monthly.html'" value="予約簿" />
+            <input type="button" class="btn btn-sm btn-header" name="button" onclick="location.href='carte_patient_search.html'" value="カルテ" />
+            <input type="button" class="btn btn-sm btn-header" name="button" onclick="location.href='menu.html'" value="メニューへ" />
+            <input type="button" class="btn btn-sm btn-header" name="button" onclick="location.href='logout.html'" value="ログアウト" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Content ddr calendar edit -->
+    <section id="page">
+      <div class="container">
+        <div class="row content content--calendar">
+          <h3>院長カレンダー　＞　予定の新規登録</h3>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+              <tr>
+                <td class="col-title">開始日時</td>
+                <td>
+                  <select name="select" class="form-control form-control--small">
+                    <option>2016年</option>
+                  </select>
+                  <select name="select2" class="form-control form-control--small">
+                    <option>4月</option>
+                  </select>
+                  <select name="select3" class="form-control form-control--small">
+                    <option>16日(土)</option>
+                  </select>
+                  <img src="common/image/dummy-calendar.png" width="27" height="23" />　　
+                  <select name="select4" class="form-control form-control--small">
+                    <option>--時</option>
+                  </select>
+                  <select name="select5" class="form-control form-control--small">
+                    <option>--分</option>
+                  </select>
+                  から
+                </td>
+              </tr>
+              <tr>
+                <td class="col-title">終了日時</td>
+                <td>
+                  <select name="select6" class="form-control form-control--small">
+                    <option>2016年</option>
+                  </select>
+                  <select name="select6" class="form-control form-control--small">
+                    <option>4月</option>
+                  </select>
+                  <select name="select6" class="form-control form-control--small">
+                    <option>16日(土)</option>
+                  </select>
+                  <img src="common/image/dummy-calendar.png" width="27" height="23" />　　
+                  <select name="select6" class="form-control form-control--small">
+                    <option>--時</option>
+                  </select>
+                  <select name="select6" class="form-control form-control--small">
+                    <option>--分</option>
+                  </select>
+                  まで
+                </td>
+              </tr>
+              <tr>
+                <td class="col-title">内容</td>
+                <td>
+                  <select name="select11" class="form-control form-control--small">
+                    <option style="color: #000">■</option>
+                    <option style="color: #F00">■</option>
+                    <option style="color: #00F">■</option>
+                    <option style="color: #390">■</option>
+                    <option style="color: #F90">■</option>
+                  </select>          
+                  <input name="textfield" type="text" value="" class="form-control form-control--small"/>
+                </td>
+              </tr>
+            </table>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <input type="submit" name="button" value="登録する" class="btn btn-sm btn-page mar-right">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End content ddr calendar edit -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="common/js/bootstrap.min.js"></script>
+  </body>
+</html>

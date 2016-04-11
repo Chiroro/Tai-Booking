@@ -1,0 +1,578 @@
+@charset "utf-8";
+
+/*--------------------------------------------------------------------------------------------------
+
+   page
+         - header
+         - content
+
+
+--------------------------------------------------------------------------------------------------*/
+
+
+/*reset-------------------------------------------------*/
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+} 
+
+body,div,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,header,section,article,aside,footer,nav,li {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+ border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+header,section,article,aside,footer,nav {
+ display: block;
+}
+
+ul {
+  list-style: none;
+}
+/*-------------------------------------------------reset*/
+
+
+/*common-------------------------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  line-height: 1.4;
+  color: #257272;
+  background:#fbf9f9;
+  height:768px;
+}
+
+a {
+  text-decoration:none;
+  cursor:pointer;
+  color:#257272;
+}
+a:link {
+  /*color: #F10000;*/
+}
+
+a:visited {
+  /*color: #F10000;*/
+}
+
+a:hover, a:active {
+  color: #555;
+}
+
+.clear:after {
+ content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear {
+  clear:both;
+}
+
+input {
+  border-color:#fff;
+}
+
+table {
+  margin-top:40px;
+}
+
+/*-------------------------------------------------common*/
+
+
+/*------------------------------------------------------------------------------------------------
+  header
+--------------------------------------------------------------------------------------------------*/
+
+header {
+  background:#03a6a6;
+  padding:20px;
+  opacity:0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+  border-bottom:2px solid #d7d6d5;
+  -webkit-box-shadow: 2px 2px 2px 4px #d7d6d5;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    2px 2px 2px 4px #d7d6d5;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         2px 2px 2px 4px #d7d6d5;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  width:100%;
+  color:#fff;
+}
+
+header h1 {
+  font-size:18px;
+  text-transform: uppercase;
+  font-weight:bold;
+}
+
+/*------------------------------------------------------------------------------------------------
+  content
+--------------------------------------------------------------------------------------------------*/
+
+.container {
+  width:100%;
+  padding:0px 20px;
+}
+
+.btn {
+  color:#fff;
+}
+
+.btn:hover {
+  color:#fff;
+}
+
+.btn-login {
+  background-color: #066e6e;
+  border-color: #025c5c;
+}
+
+.btn-login:hover {
+  background-color: #055959;
+  border-color: #044e4e;
+}
+
+.btn-page {
+  background-color: #34a1a1;
+  border-color: #199797;
+}
+
+.btn-page:hover {
+  background-color: #158b8b;
+  border-color: #097a7a;
+}
+
+.btn-header {
+  background-color: #54cfcf;
+  border-color: #1fc2c2;
+}
+
+.btn-header:hover {
+  background-color: #4ec2c2;
+  border-color: #20b8b8;
+}
+
+.btn-mar-right {
+  margin-right:20px;
+}
+
+.page-right {
+  text-align:right;
+}
+
+h1 {
+  font-size:25px;
+  font-weight:bold;
+}
+
+
+.form-control--default {
+  display: inline;
+  width: 250px;
+  height: 30px;
+  padding: 5px;
+  border-radius:3px;
+}
+
+.form-control--small {
+  display: inline;
+  width: 125px;
+  height: 30px;
+  padding: 5px;
+  border-radius:3px;
+  color:#257272;
+}
+
+.form-control--smaller {
+  display: inline;
+  width: 90px;
+  height: 30px;
+  padding: 5px;
+  border-radius:3px;
+}
+
+.form-control--small-xs {
+  display: inline;
+  width: 60px;
+  height: 25px;
+  padding: 3px;
+  border-radius:3px;
+}
+
+.form-control--mar-right {
+  margin-right:10px;
+}
+
+.fl-right {
+  float:right;
+}
+
+.mar-bottom {
+  margin-bottom:10px;
+}
+
+.mar-right {
+  margin-right:20px;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+  background-color: #eff9f9;
+}
+
+.text-orange {
+  color:#d25c11;
+}
+
+.with-errors {
+  color:#d41010;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  vertical-align:top;
+}
+
+#login {
+  width:100%;
+  opacity:0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+#login .content-login {
+  width:100%;
+  height:450px;
+  background:#8acdcd;
+  -webkit-box-shadow: 2px 2px 2px 6px #d4eded;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    2px 2px 2px 6px #d4eded;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         2px 2px 2px 6px #d4eded;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  color: #0b3b3b;
+  margin-top:125px;
+}
+
+#login .container {
+  width:850px;
+}
+
+.content-login h1 {
+  margin-top:170px;
+  text-align:center;
+}
+
+#login .content-login h1 {
+  margin-top:80px;
+  text-align:center;
+}
+
+.content-login .form-horizontal {
+  width:100%;
+  border:none;
+  margin:50px auto;
+  font-size:16px;
+}
+
+#page .content {
+  margin-top:100px;
+  padding:0px 10px;
+}
+
+#page .content--import {
+  margin-top:40px;
+}
+
+#page .content h2 {
+  font-size:16px;
+  font-weight:bold;
+  width: 85%;
+  border-bottom: 1px dotted #14578b;
+  height: 34px;
+  line-height: 34px;
+  margin-bottom:10px;
+  color:#1e5d5d;
+}
+
+#page .content h1 {
+  margin-bottom:70px;
+  text-align:center;
+}
+
+#page .content h3 {
+  font-size:18px;
+  padding-bottom:10px;
+}
+
+#page .content--import h2{
+  margin-top:20px;
+}
+
+#page .content ul {
+  margin-bottom:25px;
+  width:85%;
+}
+
+
+#page .content--import ul {
+  margin:20px 0px;
+}
+
+#page .content ul li {
+  line-height:25px;
+}
+
+#page .content ul li .glyphicon {
+  margin-right:5px;
+  margin-left:5px;
+}
+
+#page .content ul li a:hover {
+  color: #f37221;
+}
+
+#page table .col-title {
+  background: #88c9c9;
+  color: #257272;
+  font-weight: bold;
+}
+
+#page .content--list table {
+  margin-top:10px!important;
+}
+
+#page .content--changepass ul{
+  margin-bottom:0px;
+}
+
+#page .content--list table td p {
+  line-height:25px;
+}
+
+#page .content--list table td p:first-of-type {
+  text-align:right;
+  margin-bottom:10px;
+}
+
+#page .content--list table td p.box-blue {
+  background:#99CCFF;
+  padding:0px 10px;
+}
+
+#page .content--list table td p.box-blue img{
+  margin-top:7px;
+  margin-right:10px;
+}
+
+#page .content--calendar img {
+  margin-top:6px;
+}
+
+@media all and (max-width: 768px) {
+  #login .container {
+    width:100%;  
+  }
+
+  .container {
+    width:100%;
+  }
+
+  .mar-top {
+    margin-top:10px;
+  }
+
+  #page .content {
+	margin-top: 80px;
+	margin-bottom:20px;
+  }
+
+  #page .content h2 {
+    width:100%;
+  }
+
+  #page .content ul {
+    width:100%;
+  }
+  
+  #page .content h3 {
+	padding-top:10px;
+    padding-bottom:20px;
+  }
+  
+  .form-control--small {
+	width:100px;
+  }
+  
+  #login .content-login label {
+	text-align:left;
+  }
+}
+
+
+
+
+/*---phu---*/
+#calendar {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+}
+#page #calendar table {
+  margin-top: 0 !important;
+}
+#calendar table thead th{
+    background-color: #88c9c9;
+    color: #257272;
+    font-weight: bold;
+    padding: 8px;
+}
+#calendar .fc-left button{
+    background-color: #34a1a1;
+    border-color: #199797;
+    border: none;
+}
+.fc-event{
+  border-color: #99ccff;
+  background-color: #99ccff;
+  color: #000;
+}
+.fc-title img{
+  height: 10px;
+  padding: 3px;
+}
+.fc-center > h2{
+  width: auto !important;
+  border: none !important;
+}
+.fillter{
+  float: left;
+  margin-bottom: 50px;
+  background-color: #ddd;
+  padding: 5px 0;
+  width: 100%;
+}
+.fillter select,
+.fillter input{
+  height: 30px;
+  color: black;
+}
+.fillter input{
+  position: relative;
+  top: -1px;
+}
+.fc-icon-left-single-arrow:after {
+    content: "<< 前月";
+    font-weight: bold;
+    font-size: 12px;
+    top: 0;
+    left: 3%;
+    height: 24px;
+}
+.fc-icon-right-single-arrow:after {
+    content: "翌月 >>";
+    font-weight: bold;
+    font-size: 12px;
+    top: 0;
+    left: 3%;
+    height: 24px;
+}
+#calendar .fc-icon {
+  width: 50px;
+  height: 24px;
+  font-size: 5px;
+  line-height: 24px;
+}
+#calendar .fc .fc-icon{
+  top: 0;
+}
+#calendar .fc-state-default{
+  background-image: none;
+  color: white;
+  font-weight: normal;
+  text-shadow: none;
+}
+.fc-content{
+	padding: 5px 10px 3px 10px;
+}
+.fc-content .fc-title img{
+	position: relative;
+	top: -1px;
+}
+.btn-sm.btn-page.no-border{
+	border: 0 !important;
+	color: white;
+}
+
+
+
+
+
+/* phu add */
+
+.content-page{
+  padding: 0 20px;
+}
+.content-page > h3{
+  margin-top: 70px;
+  font-size: 18px;
+}
+.breadcrumbs{
+  margin: 40px 0 0 0;
+}
+.content-page .table{
+  float: left;
+}
+.content-page .table td{
+  vertical-align: top;
+}
+.content-page .table .col-title {
+    background: #88c9c9;
+    color: #257272;
+    font-weight: bold;
+    vertical-align: middle;
+    width: 15%;
+}
+.margin-bottom{
+  margin-bottom: 40px;
+}
+.error-input{
+  display: inline-block;
+  margin-top: 2px;
+  color: red;
+}
+.content-page .table input[type="text"] {
+  width: 40%;
+}
+.content-page .table.user-list .col-title{
+  text-align: center;
+}
+
+
+/*--------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

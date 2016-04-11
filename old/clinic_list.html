@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>オーソネットワーク予約管理システム</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="1280" border="0" cellspacing="0" cellpadding="5">
+  <tr>
+    <td bgcolor="#00b2b2"><table width="1280" border="0" cellspacing="0" cellpadding="5">
+      <tr>
+        <td width="124"><img src="title.png" width="124" height="30" /></td>
+        <td>ようこそ、山田花子さん</td>
+        <td width="1%"><input type="button" onclick="location.href='mycalendar.html'" value="院長・自分カレンダー" /></td>
+        <td width="1%"><input type="button" onclick="location.href='booking-monthly.html'" value="予約簿" /></td>
+        <td width="1%"><input type="button" onclick="location.href='carte_patient_search.html'" value="カルテ" /></td>
+        <td width="1%"><input type="button" onclick="location.href='menu.html'" value="メニューへ" /></td>
+        <td width="1%"><input type="button" onclick="location.href='logout.html'" value="ログアウト" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="title">医院情報管理　＞　登録済み医院の一覧</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="right"><table width="100%" border="1" cellspacing="0" cellpadding="5">
+      <tr>
+        <td width="20%" class="col3">絞り込み</td>
+        <td>医院名：
+          <input type="text" name="textfield" id="textfield" />
+          　
+          <input type="submit" name="button" id="button" value="表示" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="right"><input type="button" onclick="location.href='clinic_regist.html'" value="医院の新規登録" /></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="1" cellspacing="0" cellpadding="5">
+      <tr class="col3">
+        <td width="15%" align="center" nowrap="nowrap">医院名</td>
+        <td align="center">連絡先</td>
+        <td width="4%" align="center" nowrap="nowrap">処置</td>
+        <td width="4%" align="center" nowrap="nowrap">X-ray</td>
+        <td width="4%" align="center" nowrap="nowrap">SP</td>
+        <td width="4%" align="center" nowrap="nowrap">TBI</td>
+        <td width="4%" align="center" nowrap="nowrap">出張</td>
+        <td width="1%" align="center">設備管理</td>
+        <td width="1%" align="center">業務枠管理</td>
+        <td width="1%" align="center">予約雛形管理</td>
+        <td width="1%" align="center">編集</td>
+      </tr>
+      <tr>
+        <td>たい矯正歯科</td>
+        <td>〒700-0941　岡山県岡山市北区青江5-1-1　　ライフプラザ青江3F<br />
+          院長：田井規能　<br />
+          TEL：086-234-6480　　FAX：086-234-6481 <br />
+E-mail：ktai@tai-ortho.com</td>
+        <td align="center">○</td>
+        <td align="center">○</td>
+        <td align="center">○</td>
+        <td align="center">○</td>
+        <td align="center">○</td>
+        <td><input type="button" onClick="location.href='clinic_facility_list.html'" value="「設備」管理" /></td>
+        <td><input type="button" onClick="location.href='clinic_service_list.html'" value="「業務枠」管理" /></td>
+        <td><input type="button" onClick="location.href='clinic_booking-template_list.html'" value="「予約雛形」管理" /></td>
+        <td><input type="button" onClick="location.href='clinic_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>あかまつデンタル</td>
+        <td>〒700-0927　岡山県岡山市北区西古松74-1　　大森ビル2F　<br />
+          086-227-1825　　086-227-1826 <br />
+          E-mail：akamatsu-dc@mx32.tiki.ne.jp</td>
+        <td align="center">○</td>
+        <td align="center">×</td>
+        <td align="center">○</td>
+        <td align="center">○</td>
+        <td align="center">×</td>
+        <td><input type="button" onclick="location.href='clinic_facility_list.html'" value="「設備」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_service_list.html'" value="「業務枠」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_booking-template_list.html'" value="「予約雛形」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_edit.html'" value="編集" /></td>
+        </tr>
+      <tr>
+        <td>アップル歯科クリニック</td>
+        <td>〒701-1145　岡山県岡山市北区横井上211-1<br />
+          086-294-3839　　086-294-5661 </td>
+        <td align="center">×</td>
+        <td align="center">×</td>
+        <td align="center">×</td>
+        <td align="center">○</td>
+        <td align="center">×</td>
+        <td><input type="button" onclick="location.href='clinic_facility_list.html'" value="「設備」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_service_list.html'" value="「業務枠」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_booking-template_list.html'" value="「予約雛形」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_edit.html'" value="編集" /></td>
+        </tr>
+      <tr>
+        <td>あべ小児歯科</td>
+        <td>〒683-0804　鳥取県米子市米原2-3-20　　2階<br />
+          0859-35-8640　　 </td>
+        <td align="center">○</td>
+        <td align="center">×</td>
+        <td align="center">○</td>
+        <td align="center">○</td>
+        <td align="center">×</td>
+        <td><input type="button" onclick="location.href='clinic_facility_list.html'" value="「設備」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_service_list.html'" value="「業務枠」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_booking-template_list.html'" value="「予約雛形」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_edit.html'" value="編集" /></td>
+        </tr>
+      <tr>
+        <td>あゆみ歯科クリニック</td>
+        <td>〒710-0824　岡山県倉敷市白樂町39-8<br />
+          086-423-4618　　086-423-4619 </td>
+        <td align="center">×</td>
+        <td align="center">×</td>
+        <td align="center">×</td>
+        <td align="center">×</td>
+        <td align="center">×</td>
+        <td><input type="button" onclick="location.href='clinic_facility_list.html'" value="「設備」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_service_list.html'" value="「業務枠」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_booking-template_list.html'" value="「予約雛形」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_edit.html'" value="編集" /></td>
+        </tr>
+      <tr>
+        <td>飯田歯科医院</td>
+        <td>〒719-3155　岡山県真庭市下方577-2<br />
+          0867-52-3068　　0867-52-3039 </td>
+        <td align="center">○</td>
+        <td align="center">×</td>
+        <td align="center">○</td>
+        <td align="center">○</td>
+        <td align="center">○</td>
+        <td><input type="button" onclick="location.href='clinic_facility_list.html'" value="「設備」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_service_list.html'" value="「業務枠」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_booking-template_list.html'" value="「予約雛形」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_edit.html'" value="編集" /></td>
+        </tr>
+      <tr>
+        <td>いけだ歯科クリニック</td>
+        <td>〒702-8006　岡山県岡山市中区藤崎136-21　　<br />
+          086-277-5505　　086-277-5586 <br />
+          E-mail：yoichii@orange.ocn.ne.jp</td>
+        <td align="center">○</td>
+        <td align="center">×</td>
+        <td align="center">×</td>
+        <td align="center">○</td>
+        <td align="center">×</td>
+        <td><input type="button" onclick="location.href='clinic_facility_list.html'" value="「設備」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_service_list.html'" value="「業務枠」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_booking-template_list.html'" value="「予約雛形」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_edit.html'" value="編集" /></td>
+        </tr>
+      <tr>
+        <td>いしわり歯科医院</td>
+        <td>〒701-4264　岡山県瀬戸内市長船町土師313-1　<br />
+          0869-26-6858　　0869-26-6858 </td>
+        <td align="center">○</td>
+        <td align="center">×</td>
+        <td align="center">○</td>
+        <td align="center">○</td>
+        <td align="center">○</td>
+        <td><input type="button" onclick="location.href='clinic_facility_list.html'" value="「設備」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_service_list.html'" value="「業務枠」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_booking-template_list.html'" value="「予約雛形」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_edit.html'" value="編集" /></td>
+        </tr>
+      <tr>
+        <td>今浜歯科医院</td>
+        <td>〒702-8021　岡山県岡山市南区福田666-6<br />
+          086-261-1182　　086-261-1183 </td>
+        <td align="center">×</td>
+        <td align="center">×</td>
+        <td align="center">×</td>
+        <td align="center">○</td>
+        <td align="center">×</td>
+        <td><input type="button" onclick="location.href='clinic_facility_list.html'" value="「設備」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_service_list.html'" value="「業務枠」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_booking-template_list.html'" value="「予約雛形」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_edit.html'" value="編集" /></td>
+        </tr>
+      <tr>
+        <td>イースト歯科クリニック</td>
+        <td>〒732-0814　広島県広島市南区段原南1丁目3-53　広島イーストビル2F　　　<br />
+          082-567-0505　　082-567-2323 </td>
+        <td align="center">○</td>
+        <td align="center">×</td>
+        <td align="center">×</td>
+        <td align="center">○</td>
+        <td align="center">×</td>
+        <td><input type="button" onclick="location.href='clinic_facility_list.html'" value="「設備」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_service_list.html'" value="「業務枠」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_booking-template_list.html'" value="「予約雛形」管理" /></td>
+        <td><input type="button" onclick="location.href='clinic_edit.html'" value="編集" /></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center"><input type="submit" name="button2" id="button2" value="前の10件を表示" disabled="disabled" />
+      　　　　　
+      <input type="submit" name="button3" id="button3" value="次の10件を表示" /></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

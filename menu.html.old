@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>オーソネットワーク予約管理システム</title>
+
+    <!-- Bootstrap -->
+    <link href="common/css/bootstrap.min.css" rel="stylesheet">
+    <link href="common/css/page.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container-fulid">
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <span class="mar-right"><img src="common/image/logo.png" /></span>
+            <span>ようこそ、山田花子さん（<a href="passwd.html" class="text-orange">パスワード変更</a>）</span>
+          </div>
+          <div class="col-md-6 col-lg-6 page-right mar-top">
+            <input type="button" class="btn btn-sm btn-header" name="button2" onclick="location.href='mycalendar.html'" value="院長・自分カレンダー" />
+            <input type="button" class="btn btn-sm btn-header" name="button" onclick="location.href='booking-monthly.html'" value="予約簿" />
+            <input type="button" class="btn btn-sm btn-header" name="button" onclick="location.href='carte_patient_search.html'" value="カルテ" />
+            <input type="button" class="btn btn-sm btn-header" name="button" onclick="location.href='menu.html'" value="メニューへ" />
+            <input type="button" class="btn btn-sm btn-header" name="button" onclick="location.href='logout.html'" value="ログアウト" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- content menu -->
+    <section id="page">
+      <div class="container">
+        <div class="row content content--menu">
+          <h1>メニュー</h1>
+          <div class="col-md-4 col-lg-4">
+            <h2>患者管理</h2>
+            <ul>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>患者の新規登録・一覧・変更・削除・予約表示・来院履歴・コミュニケーションノート</a></li>
+            </ul>
+            <h2>医院情報管理</h2>
+            <ul>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>新患の予約を取る</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>次回の予約を取る</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>予約の変更・キャンセル処理</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>TEL待ちリストから予約を取る</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>急患の予約を取る</a></li>
+              <li><a href="booking-monthly.html"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>予約簿の表示</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>予約状況の模式図</a></li>
+            </ul>
+            <h2>院長予定管理</h2>
+            <ul>
+              <li><a href="ddr-calendar.html"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>院長予定のカレンダー表示・新規登録・変更・削除</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-4">
+            <h2>月1回の予約業務前処理</h2>
+            <ul>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>シフトの新規登録・一覧・変更・削除</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>予約簿テンプレートの適用・個別編集</a></li>
+            </ul>
+            <h2>医院情報管理</h2>
+            <ul>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>医院の新規登録・一覧・変更・削除・設備管理・予約簿テンプレート管理・予約枠管理</a></li>
+            </ul>
+            <h2>各種リスト表示</h2>
+            <ul>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>「TEL待ち」リストの表示</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>「無断キャンセル」リストの表示</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>「リコール」リストの表示</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>「未作成技工物TEL待ち」リストの表示</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>「作成済み技工物キャンセル」リストの表示</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-4">
+            <h2>放射線録管理</h2>
+            <ul>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>放射線録の表示</a></li>
+            </ul>
+            <h2>共通マスタ管理</h2>
+            <ul>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>「地域」項目の新規登録・一覧・変更・削除</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>「業務」項目の新規登録・一覧・変更・削除</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>「装置」項目の新規登録・一覧・変更・削除</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>「処置内容1」項目の新規登録・一覧・変更・削除</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>「処置内容2」項目の新規登録・一覧・変更・削除</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>「検査」項目の新規登録・一覧・変更・削除</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>「保険診療」項目の新規登録・一覧・変更・削除</a></li>
+            </ul>
+            <h2>ユーザー管理</h2>
+            <ul>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>ユーザーの新規登録・一覧・変更・削除</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>「部門」項目の新規登録・一覧・変更・削除</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>「権限」項目の新規登録・一覧・変更・削除</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End content menu -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="common/js/bootstrap.min.js"></script>
+  </body>
+</html>

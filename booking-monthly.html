@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>オーソネットワーク予約管理システム</title>
+
+	<link href='common/css/fullcalendar.css' rel='stylesheet' />
+	<link href='common/css/fullcalendar.print.css' rel='stylesheet' media='print' />
+	<!-- Bootstrap -->
+	<link href="common/css/bootstrap.min.css" rel="stylesheet">
+	<link href="common/css/page.css" rel="stylesheet">
+
+</head>
+<body>
+	<!-- Header -->
+    <header>
+      <div class="container-fulid">
+        <div class="row">
+          <div class="col-md-6">
+            <span class="mar-right"><img src="common/image/logo.png" /></span>
+			<span>ようこそ、山田花子さん（<a href="passwd.html" class="text-orange">パスワード変更</a>）</span>
+          </div>
+          <div class="col-md-6 page-right mar-top">
+            <input type="button" class="btn btn-sm btn-header" name="button2" onclick="location.href='mycalendar.html'" value="院長・自分カレンダー" />
+			<input type="button" class="btn btn-sm btn-header" name="button" onclick="location.href='booking-monthly.html'" value="予約簿" />
+			<input type="button" class="btn btn-sm btn-header" name="button" onclick="location.href='carte_patient_search.html'" value="カルテ" />
+			<input type="button" class="btn btn-sm btn-header" name="button" onclick="location.href='menu.html'" value="メニューへ" />
+			<input type="button" class="btn btn-sm btn-header" name="button" onclick="location.href='logout.html'" value="ログアウト" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- content menu -->
+    <section id="page">
+      <div class="container">
+        <div class="row content content--list">
+          	<h1>予約簿</h1>
+
+          	<div class="fillter">
+          		<div class="col-md-12 page-left">
+		            <select name="" id="" class="btn-sm btn-page no-border">
+		            	<option value="">▼地域</option>
+		            </select>
+					<select name="" id="" class="btn-sm btn-page no-border">
+		            	<option value="">▼医院名</option>
+		            </select>
+					<input type="button" class="btn-sm btn-page no-border" name="button" onclick="location.href='carte_patient_search.html'" value="絞込表示">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<select name="" id="" class="btn-sm btn-page no-border">
+		            	<option value="">▼Dr</option>
+		            </select>
+					<input type="button" class="btn-sm btn-page no-border" name="button" onclick="location.href='logout.html'" value="絞込表示">
+				</div>
+          	</div>
+		    
+			<div id='calendar'></div>
+        </div>
+      </div>
+    </section>
+    <!-- End content menu -->
+    
+	<script src='common/js/jquery.min.js'></script>
+	<script src="common/js/bootstrap.min.js"></script>
+	<script src='common/js/moment.min.js'></script>
+	<script src='common/js/fullcalendar.js'></script>
+	<script src='common/js/lang-all.js'></script>
+
+	<script>
+	$(document).ready(function() {
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth();
+		var y = date.getFullYear();
+
+		var calendar = $('#calendar').fullCalendar({
+			lang: 'ja',
+			eventLimit: false,
+			editable: true,
+			header: {
+				left: 'prev today next',
+				center: 'title',
+				//right: 'month,agendaWeek,agendaDay'
+				right: ''
+			},
+
+			//load all event from DB
+			//events: "http://demo_fullcalendar/events.php",
+			events: [
+				{
+					title: '<img src="common/image/hospital.png">たい矯正歯科<img src="common/image/docter.png">大村Dr ',
+					start: '2016-04-08',
+					end: '2016-04-09',
+					url: 'ddr_calendar_edit.html'
+				},
+				{
+					title: '<img src="common/image/hospital.png">たい矯正歯科<img src="common/image/docter.png">大村Dr ',
+					start: '2016-04-08',
+					end: '2016-04-09',
+					url: 'ddr_calendar_edit.html'
+				},
+				{
+					title: '<img src="common/image/hospital.png">たい矯正歯科<img src="common/image/docter.png">大村Dr ',
+					start: '2016-04-08',
+					end: '2016-04-09',
+					url: 'ddr_calendar_edit.html'
+				},
+				{
+					title: '<img src="common/image/hospital.png">たい矯正歯科<img src="common/image/docter.png">大村Dr ',
+					start: '2016-04-08',
+					end: '2016-04-09',
+					url: 'ddr_calendar_edit.html'
+				},
+				{
+					title: '<img src="common/image/hospital.png">たい矯正歯科<img src="common/image/docter.png">大村Dr ',
+					start: '2016-04-08',
+					end: '2016-04-09',
+					url: 'ddr_calendar_edit.html'
+				},
+				{
+					title: '<img src="common/image/hospital.png">たい矯正歯科<img src="common/image/docter.png">大村Dr ',
+					start: '2016-04-08',
+					end: '2016-04-09',
+					url: 'ddr_calendar_edit.html'
+				},
+				{
+					title: '<img src="common/image/hospital.png">たい矯正歯科<img src="common/image/docter.png">大村Dr ',
+					start: '2016-04-08',
+					end: '2016-04-09',
+					url: 'ddr_calendar_edit.html'
+				},
+				{
+					title: '<img src="common/image/hospital.png">たい矯正歯科<img src="common/image/docter.png">大村Dr ',
+					start: '2016-04-04',
+					end: '2016-04-05',
+					url: 'ddr_calendar_edit.html'
+				},
+				{
+					title: '<img src="common/image/hospital.png">たい矯正歯科<img src="common/image/docter.png">大村Dr ',
+					start: '2016-04-03',
+					end: '2016-04-06',
+					url: 'ddr_calendar_edit.html'
+				},
+				{
+					title: '<img src="common/image/hospital.png">たい矯正歯科<img src="common/image/docter.png">大村Dr ',
+					start: '2016-04-03',
+					end: '2016-04-07',
+					url: 'ddr_calendar_edit.html'
+				},
+				{
+					title: '<img src="common/image/hospital.png">たい矯正歯科<img src="common/image/docter.png">大村Dr ',
+					start: '2016-04-09',
+					end: '2016-04-10',
+					url: 'ddr_calendar_edit.html'
+				},
+				{
+					title: '<img src="common/image/hospital.png">たい矯正歯科<img src="common/image/docter.png">大村Dr ',
+					start: '2016-04-09',
+					end: '2016-04-11',
+					url: 'ddr_calendar_edit.html'
+				}
+			],
+			
+			// Convert the allDay from string to boolean
+			eventRender: function(event, element, view) {
+				if (event.allDay === 'true') {
+					event.allDay = true;
+				} else {
+					event.allDay = false;
+				}
+			},
+			selectable: true,
+			selectHelper: true,
+			select: function(start, end, allDay) {
+				// var title = prompt('Event Title:');
+				// var url = prompt('Type Event url, if exits:');
+				// if (title) {
+					var start = moment(start).format('YYYY-MM-DD HH:mm:ss'); 
+					var end = moment(end).format('YYYY-MM-DD HH:mm:ss');
+				// 	$.ajax({
+				// 		url: 'http://demo_fullcalendar/add_events.php',
+				// 		data: 'title='+ title+'&start='+ start +'&end='+ end +'&url='+ url ,
+				// 		type: "POST",
+				// 		success: function(json) {
+				// 			alert('Added Successfully');
+				// 		}
+				// 	});
+				// 	calendar.fullCalendar('renderEvent',
+				// 	{
+				// 		title: title,
+				// 		start: start,
+				// 		end: end,
+				// 		allDay: allDay
+				// 	},
+				// 	true
+				// 	);
+				// }
+				
+				calendar.fullCalendar('unselect');
+
+				//window.location.href = 'http://demo_fullcalendar/create-news?start=' + start + '&end=' + end + '&allDay=' + allDay;
+				window.location.href = 'ddr_calendar_regist.html';
+			},
+
+			editable: true,
+		});
+	});
+	</script>
+
+</body>
+</html>

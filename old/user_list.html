@@ -1,0 +1,679 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>オーソネットワーク予約管理システム</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="1280" border="0" cellspacing="0" cellpadding="5">
+  <tr>
+    <td bgcolor="#00b2b2"><table width="1280" border="0" cellspacing="0" cellpadding="5">
+      <tr>
+        <td width="124"><img src="title.png" width="124" height="30" /></td>
+        <td>ようこそ、山田花子さん</td>
+        <td width="1%"><input type="button" onclick="location.href='mycalendar.html'" value="院長・自分カレンダー" /></td>
+        <td width="1%"><input type="button" onclick="location.href='booking-monthly.html'" value="予約簿" /></td>
+        <td width="1%"><input type="button" onclick="location.href='carte_patient_search.html'" value="カルテ" /></td>
+        <td width="1%"><input type="button" onclick="location.href='menu.html'" value="メニューへ" /></td>
+        <td width="1%"><input type="button" onclick="location.href='logout.html'" value="ログアウト" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="title">ユーザー管理　＞　登録済みユーザーの一覧</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="right"><input type="button" onClick="location.href='user_regist.html'" value="ユーザーの新規登録" /></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="1" cellspacing="0" cellpadding="5">
+      <tr class="col3">
+        <td align="center">名前</td>
+        <td align="center">ログインID</td>
+        <td align="center">所属</td>
+        <td align="center">権限</td>
+        <td width="1%" align="center">編集</td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>山田花子</td>
+        <td>yamada</td>
+        <td>医師</td>
+        <td>・患者管理<br />
+          ・予約管理<br />
+          ・院長予定管理<br />
+          ・放射線録管理<br />
+          ・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onClick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+      <tr>
+        <td>杉元俊彦</td>
+        <td>sugimoto</td>
+        <td>事務</td>
+        <td>・月1回の予約業務前処理<br />
+          ・医院情報管理<br />
+          ・各種リスト表示<br />
+          ・共通マスタ管理<br />
+          ・ユーザー管理</td>
+        <td><input type="button" onclick="location.href='user_edit.html'" value="編集" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="right"><input type="button" onclick="location.href='user_regist.html'" value="ユーザーの新規登録" /></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

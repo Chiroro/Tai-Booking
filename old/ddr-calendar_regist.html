@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>オーソネットワーク予約管理システム</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="1280" border="0" cellspacing="0" cellpadding="5">
+  <tr>
+    <td bgcolor="#00b2b2"><table width="1280" border="0" cellspacing="0" cellpadding="5">
+      <tr>
+        <td width="124"><img src="title.png" width="124" height="30" /></td>
+        <td>ようこそ、山田花子さん</td>
+        <td width="1%"><input type="button" onclick="location.href='mycalendar.html'" value="院長・自分カレンダー" /></td>
+        <td width="1%"><input type="button" onclick="location.href='booking-monthly.html'" value="予約簿" /></td>
+        <td width="1%"><input type="button" onclick="location.href='carte_patient_search.html'" value="カルテ" /></td>
+        <td width="1%"><input type="button" onclick="location.href='menu.html'" value="メニューへ" /></td>
+        <td width="1%"><input type="button" onclick="location.href='logout.html'" value="ログアウト" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="title">院長カレンダー　＞　予定の新規登録</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="1" cellspacing="0" cellpadding="5">
+      <tr>
+        <td width="20%" class="col3">開始日時</td>
+        <td><select name="select" id="select">
+          <option>2016年</option>
+        </select>
+          <select name="select2" id="select2">
+            <option>4月</option>
+          </select>
+          <select name="select3" id="select3">
+            <option>16日(土)</option>
+          </select>
+          <img src="dummy-calendar.png" width="27" height="23" />　　
+          <select name="select4" id="select4">
+            <option>--時</option>
+          </select>
+          <select name="select5" id="select5">
+            <option>--分</option>
+          </select>
+          から</td>
+      </tr>
+      <tr>
+        <td width="20%" class="col3">終了日時</td>
+        <td><select name="select6" id="select6">
+          <option>2016年</option>
+        </select>
+          <select name="select6" id="select7">
+            <option>4月</option>
+          </select>
+          <select name="select6" id="select8">
+            <option>16日(土)</option>
+          </select>
+          <img src="dummy-calendar.png" width="27" height="23" />　　
+          <select name="select6" id="select9">
+            <option>--時</option>
+          </select>
+          <select name="select6" id="select10">
+            <option>--分</option>
+          </select>
+          まで</td>
+      </tr>
+      <tr>
+        <td width="20%" class="col3">内容</td>
+        <td><select name="select11" id="select11">
+          <option style="color: #000">■</option>
+          <option style="color: #F00">■</option>
+          <option style="color: #00F">■</option>
+          <option style="color: #390">■</option>
+          <option style="color: #F90">■</option>
+        </select>          
+          <input name="textfield" type="text" id="textfield" size="60" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center"><input type="submit" name="button" id="button" value="登録する" /></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
